@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    /* display: flex;
+    justify-content: center; */
+    background:gainsboro;
+   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1000px;  */
+    max-width: 90%;
+   
+    opacity: .6px;
+    position: relative;
+    margin: auto auto; 
+    height: 100vh;
+    flex-wrap: wrap;
+    top: 50px;
+    
+}
+.container .card {
+    padding: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    /* max-height: 500px;  */
+    background: rgb(209, 207, 198); 
+    /* margin-right: 5px;  */
+    /* margin-bottom: 10px; */
+    
+    
+
+
+}
+.card.card-1{
+    background-color: darkgoldenrod;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+}
+.card.card-2{
+    background-color: rgb(69, 98, 228);
+}
+.card.card-3{
+    background-color: rgb(10, 59, 31);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+
+}
+.card .content {
+    position: relative;
+
+}
+
+.card i {
+    font-size: 20px;
+    position: absolute;
+    padding-left: 20px;
+    
+
+}
+i::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(10, 10, 10);
+    position: absolute; 
+    margin-left: -44px;
+    margin-top: -7px;
+    opacity: .6;
+    backdrop-filter: blur(5px);
+
+}
+
+
+.content h2 {
+    color: white;
+    letter-spacing: -2px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.content p{
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+.content a {
+    background: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius:20px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.card.card-1 a {
+    color: darkgoldenrod;
+}
+.card.card-2 a {
+    color: rgb(69, 98, 228);
+}
+.card.card-3 a {
+    color: rgb(10, 59, 31);
+}
+
+@media (max-width:683px) {
+    .card.card-1{
+        background-color: darkgoldenrod;
+        border-top-left-radius:10px ;
+        border-top-right-radius:10px ;
+
+        border-bottom-right-radius:0px ;
+        border-bottom-left-radius:0px ;
+    }
+    .card.card-2{
+        background-color: rgb(69, 98, 228);
+    }
+    .card.card-3{
+        background-color: rgb(10, 59, 31);
+        border-bottom-right-radius:10px ;
+        border-bottom-left-radius:10px ;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+    
+    }
+
+}
+
+
+@media (min-width:684px) and (max-width:1016px) {
+    .card.card-1{
+        background-color: darkgoldenrod;
+        border-top-left-radius:10px ;
+        border-top-right-radius:0px ;
+
+        border-bottom-right-radius:0px ;
+
+        border-bottom-left-radius:10px ;
+    }
+    .card.card-2{
+        background-color: rgb(69, 98, 228);
+        border-top-right-radius:10px ;
+        border-bottom-right-radius:10px ;
+
+    }
+    .card.card-3{
+        background-color: rgb(10, 59, 31);
+        border-bottom-right-radius:10px ;
+        border-bottom-left-radius:10px ;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    
+    }
+
+}
